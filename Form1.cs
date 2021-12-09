@@ -554,6 +554,73 @@ namespace Рафиков_СРВ
             this.tabControl1.SelectedTab = tabPage1 /*needed tab*/;
         }
 
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+        //для вывода защищенных устройств и инцидентов
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            active=0;
+            if (pk_textBox1.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (pk_textBox2.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (pk_textBox3.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (pk_textBox4.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (pk_textBox5.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+
+
+
+            if (server_textBox1.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (server_textBox2.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (network_devices_textBox1.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (network_devices_textBox2.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+            if (firewall_textBox1.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+
+            if (firewall_textBox2.ForeColor == Color.ForestGreen)
+            {
+                active++;
+            }
+
+            active_textBox.Text = Convert.ToString(active);
+            active_textBox2.Text = Convert.ToString(11-active);
+
+        }
+
+        private void label55_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

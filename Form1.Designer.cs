@@ -30,13 +30,10 @@ namespace Рафиков_СРВ
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.active_textBox2 = new System.Windows.Forms.TextBox();
@@ -116,6 +113,8 @@ namespace Рафиков_СРВ
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -153,8 +152,8 @@ namespace Рафиков_СРВ
             this.quantity_textBox1 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label52 = new System.Windows.Forms.Label();
             this.ready = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label51 = new System.Windows.Forms.Label();
             this.groupBox_firewall = new System.Windows.Forms.GroupBox();
             this.button_firewall2 = new System.Windows.Forms.Button();
@@ -197,7 +196,9 @@ namespace Рафиков_СРВ
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.label52 = new System.Windows.Forms.Label();
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -217,7 +218,6 @@ namespace Рафиков_СРВ
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox_firewall.SuspendLayout();
             this.groupBox_network.SuspendLayout();
             this.groupBox_server.SuspendLayout();
@@ -660,7 +660,7 @@ namespace Рафиков_СРВ
             // ez_game
             // 
             this.ez_game.Enabled = false;
-            this.ez_game.Location = new System.Drawing.Point(38, 522);
+            this.ez_game.Location = new System.Drawing.Point(15, 497);
             this.ez_game.Name = "ez_game";
             this.ez_game.Size = new System.Drawing.Size(141, 47);
             this.ez_game.TabIndex = 25;
@@ -1075,6 +1075,10 @@ namespace Рафиков_СРВ
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label56);
+            this.tabPage3.Controls.Add(this.label55);
+            this.tabPage3.Controls.Add(this.label54);
+            this.tabPage3.Controls.Add(this.label53);
             this.tabPage3.Controls.Add(this.chart2);
             this.tabPage3.Controls.Add(this.chart1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -1084,39 +1088,53 @@ namespace Рафиков_СРВ
             this.tabPage3.Text = "Мониторинг инцидента";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label54.Location = new System.Drawing.Point(29, 338);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(299, 20);
+            this.label54.TabIndex = 3;
+            this.label54.Text = "2. График загруженности сервера";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label53.Location = new System.Drawing.Point(90, 16);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(538, 20);
+            this.label53.TabIndex = 2;
+            this.label53.Text = "1. Зависимость задействованных СЗИ от общего количества.";
+            // 
             // chart2
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart2.Legends.Add(legend11);
-            this.chart2.Location = new System.Drawing.Point(43, 343);
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            this.chart2.Location = new System.Drawing.Point(16, 361);
             this.chart2.Name = "chart2";
-            series11.BorderWidth = 2;
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.chart2.Series.Add(series11);
-            this.chart2.Size = new System.Drawing.Size(707, 300);
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(989, 300);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
             // chart1
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart1.Legends.Add(legend12);
-            this.chart1.Location = new System.Drawing.Point(31, 39);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            this.chart1.Location = new System.Drawing.Point(16, 39);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series12.BorderWidth = 2;
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chart1.Series.Add(series12);
-            this.chart1.Size = new System.Drawing.Size(730, 268);
+            series2.BorderWidth = 2;
+            series2.ChartArea = "ChartArea1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(989, 268);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -1129,6 +1147,7 @@ namespace Рафиков_СРВ
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Затраты на эксплуатацию";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // groupBox8
             // 
@@ -1445,7 +1464,6 @@ namespace Рафиков_СРВ
             // 
             this.tabPage5.Controls.Add(this.label52);
             this.tabPage5.Controls.Add(this.ready);
-            this.tabPage5.Controls.Add(this.pictureBox1);
             this.tabPage5.Controls.Add(this.label51);
             this.tabPage5.Controls.Add(this.groupBox_firewall);
             this.tabPage5.Controls.Add(this.groupBox_network);
@@ -1458,24 +1476,28 @@ namespace Рафиков_СРВ
             this.tabPage5.Text = "Решение инцидента";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label52
+            // 
+            this.label52.AllowDrop = true;
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label52.ForeColor = System.Drawing.Color.Red;
+            this.label52.Location = new System.Drawing.Point(590, 283);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(177, 17);
+            this.label52.TabIndex = 13;
+            this.label52.Text = "Проблема не решена !";
+            this.label52.Visible = false;
+            // 
             // ready
             // 
-            this.ready.Location = new System.Drawing.Point(22, 394);
+            this.ready.Location = new System.Drawing.Point(593, 214);
             this.ready.Name = "ready";
             this.ready.Size = new System.Drawing.Size(162, 47);
             this.ready.TabIndex = 12;
             this.ready.Text = "Готово";
             this.ready.UseVisualStyleBackColor = true;
             this.ready.Click += new System.EventHandler(this.ready_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(593, 211);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(291, 170);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // label51
             // 
@@ -1901,18 +1923,28 @@ namespace Рафиков_СРВ
             this.timer4.Interval = 300;
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
-            // label52
+            // timer5
             // 
-            this.label52.AllowDrop = true;
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label52.ForeColor = System.Drawing.Color.Red;
-            this.label52.Location = new System.Drawing.Point(207, 409);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(177, 17);
-            this.label52.TabIndex = 13;
-            this.label52.Text = "Проблема не решена !";
-            this.label52.Visible = false;
+            this.timer5.Enabled = true;
+            this.timer5.Interval = 300;
+            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
+            // 
+            // label55
+            // 
+            this.label55.Location = new System.Drawing.Point(13, 664);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(315, 33);
+            this.label55.TabIndex = 4;
+            this.label55.Text = "Ось Y - пропускная способность серверного оборудования Ось Х - Время";
+            this.label55.Click += new System.EventHandler(this.label55_Click);
+            // 
+            // label56
+            // 
+            this.label56.Location = new System.Drawing.Point(30, 305);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(254, 33);
+            this.label56.TabIndex = 5;
+            this.label56.Text = "Ось Y -работающие СЗИ на момент времени  Ось Х - Время";
             // 
             // Form1
             // 
@@ -1923,7 +1955,7 @@ namespace Рафиков_СРВ
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = " Local-SIEM - \"Система мониторинга киберинцидентов в режиме реального времени\"";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1943,6 +1975,7 @@ namespace Рафиков_СРВ
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tabPage4.ResumeLayout(false);
@@ -1956,7 +1989,6 @@ namespace Рафиков_СРВ
             this.groupBox9.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox_firewall.ResumeLayout(false);
             this.groupBox_firewall.PerformLayout();
             this.groupBox_network.ResumeLayout(false);
@@ -2117,7 +2149,6 @@ namespace Рафиков_СРВ
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox textBox_PK1;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_PK1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
@@ -2132,6 +2163,11 @@ namespace Рафиков_СРВ
         private System.Windows.Forms.Button button_firewall1;
         private System.Windows.Forms.Button ez_game;
         private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
     }
 }
 
