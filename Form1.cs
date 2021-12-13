@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace Рафиков_СРВ
 {
@@ -315,10 +308,15 @@ namespace Рафиков_СРВ
 
 
             timer1.Start();
-            algorithm_label2.Text = "Уровень угрозы 1. Попробуйте проделать следующий алгоритм: \n";
-            algorithm_label2.Text += "1)сделать что-то что-то 1 \n";
-            algorithm_label2.Text += "2)сделать то  1 \n";
-            algorithm_label2.Text += "3)сделать сё  1 \n";
+            algorithm_label2.Text = "Уровень угрозы 1. Алгоритм реагирования на инциденты: \r\n";
+            algorithm_label2.Text += "1) Обнаружение инцидента \r\n";
+            algorithm_label2.Text += "2) Регистрация инцидента \r\n";
+            algorithm_label2.Text += "3) Предварительный анализ \r\n";
+            algorithm_label2.Text += "4) Классификация инцидента  \r\n";
+            algorithm_label2.Text += "5) Процесс сопоставления инцидента. Имеется ли в БД? \r\n";
+            algorithm_label2.Text += "6) Если да, то поиск возможного решения и закрытие инцидента \r\n";
+            algorithm_label2.Text += "7) Если в БД нет похожего инцидента то переходим на уровень угрозы 2 \r\n";
+            
 
             if (timer1.Enabled)
             {
@@ -620,6 +618,37 @@ namespace Рафиков_СРВ
         {
 
         }
+        ///////////////////////////////
+
+        /*
+            private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+            {
+                if (Char.IsNumber(e.KeyChar) ||
+                    (!string.IsNullOrEmpty(textBox1.Text) && e.KeyChar == ','))
+                {
+                    return;
+                }
+
+                e.Handled = true;
+            }   */
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (     !(char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))    )
+                e.Handled = true;
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar)|| (e.KeyChar ==',')   ))
+                e.Handled = true;
+        }
+
+        private void cost1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
 
 
 
@@ -685,14 +714,18 @@ namespace Рафиков_СРВ
                     if (minute == 1)
                     {
 
-                        algorithm_label2.Text = "Вы не успели решить пролему за минуту. Угроза переходит на 2 уровень \n";
-                        algorithm_label2.Text += "1)сделать что-то что-то \n";
-                        algorithm_label2.Text += "2)сделать то \n";
-                        algorithm_label2.Text += "3)сделать сё \n";
+                        algorithm_label2.Text = "Уровень угрозы 2. Алгоритм реагирования на инциденты: \r\n";
+                        algorithm_label2.Text += "Определение приоритета  \r\n";
+                        algorithm_label2.Text += "Выявление причин возникновения инцидента  \r\n";
+                        algorithm_label2.Text += "Определение методов и средств, необходимых для устранения инцидента  \r\n";
+                        algorithm_label2.Text += "Решение инцидента и восстановление работы  \r\n";
+                        algorithm_label2.Text += "Углубленнный анализ инцидента и создание полного отчета об инциденте  \r\n";
+                        algorithm_label2.Text += "Модернизация системы обеспечения ИБ и внедрение новых средств защиты  \r\n";
+
 
                     }
 
-                    if (minute == 2)
+                   /* if (minute == 2)
                     {
 
                         algorithm_label2.Text = "Вы не успели решить пролему за 2 минуту. Угроза переходит на 3 уровень \n";
@@ -701,7 +734,8 @@ namespace Рафиков_СРВ
                         algorithm_label2.Text += "3) ну же \n";
 
 
-                    }
+                    }*/
+
                 }
 
 

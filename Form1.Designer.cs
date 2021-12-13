@@ -30,10 +30,10 @@ namespace Рафиков_СРВ
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.active_textBox2 = new System.Windows.Forms.TextBox();
@@ -113,6 +113,8 @@ namespace Рафиков_СРВ
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -197,8 +199,6 @@ namespace Рафиков_СРВ
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.timer5 = new System.Windows.Forms.Timer(this.components);
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -264,6 +264,7 @@ namespace Рафиков_СРВ
             // 
             this.active_textBox2.Location = new System.Drawing.Point(169, 381);
             this.active_textBox2.Name = "active_textBox2";
+            this.active_textBox2.ReadOnly = true;
             this.active_textBox2.Size = new System.Drawing.Size(35, 20);
             this.active_textBox2.TabIndex = 12;
             // 
@@ -289,6 +290,7 @@ namespace Рафиков_СРВ
             // 
             this.active_textBox.Location = new System.Drawing.Point(169, 352);
             this.active_textBox.Name = "active_textBox";
+            this.active_textBox.ReadOnly = true;
             this.active_textBox.Size = new System.Drawing.Size(35, 20);
             this.active_textBox.TabIndex = 9;
             // 
@@ -655,7 +657,6 @@ namespace Рафиков_СРВ
             this.groupBox7.Size = new System.Drawing.Size(425, 698);
             this.groupBox7.TabIndex = 22;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "groupBox7";
             // 
             // ez_game
             // 
@@ -754,12 +755,11 @@ namespace Рафиков_СРВ
             this.groupBox6.Size = new System.Drawing.Size(559, 698);
             this.groupBox6.TabIndex = 21;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "groupBox6";
             // 
             // checkBox10
             // 
             this.checkBox10.Enabled = false;
-            this.checkBox10.Location = new System.Drawing.Point(291, 581);
+            this.checkBox10.Location = new System.Drawing.Point(291, 648);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(258, 37);
             this.checkBox10.TabIndex = 29;
@@ -769,7 +769,7 @@ namespace Рафиков_СРВ
             // checkBox9
             // 
             this.checkBox9.Enabled = false;
-            this.checkBox9.Location = new System.Drawing.Point(291, 538);
+            this.checkBox9.Location = new System.Drawing.Point(291, 605);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(229, 47);
             this.checkBox9.TabIndex = 28;
@@ -779,7 +779,7 @@ namespace Рафиков_СРВ
             // checkBox8
             // 
             this.checkBox8.Enabled = false;
-            this.checkBox8.Location = new System.Drawing.Point(291, 476);
+            this.checkBox8.Location = new System.Drawing.Point(291, 543);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(229, 68);
             this.checkBox8.TabIndex = 27;
@@ -789,7 +789,7 @@ namespace Рафиков_СРВ
             // checkBox7
             // 
             this.checkBox7.Enabled = false;
-            this.checkBox7.Location = new System.Drawing.Point(291, 476);
+            this.checkBox7.Location = new System.Drawing.Point(291, 543);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(167, 29);
             this.checkBox7.TabIndex = 26;
@@ -799,7 +799,7 @@ namespace Рафиков_СРВ
             // checkBox6
             // 
             this.checkBox6.Enabled = false;
-            this.checkBox6.Location = new System.Drawing.Point(291, 430);
+            this.checkBox6.Location = new System.Drawing.Point(291, 497);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(196, 46);
             this.checkBox6.TabIndex = 25;
@@ -809,7 +809,7 @@ namespace Рафиков_СРВ
             // radioButton9
             // 
             this.radioButton9.Enabled = false;
-            this.radioButton9.Location = new System.Drawing.Point(16, 522);
+            this.radioButton9.Location = new System.Drawing.Point(16, 589);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(252, 57);
             this.radioButton9.TabIndex = 24;
@@ -821,7 +821,7 @@ namespace Рафиков_СРВ
             // radioButton5
             // 
             this.radioButton5.Enabled = false;
-            this.radioButton5.Location = new System.Drawing.Point(17, 359);
+            this.radioButton5.Location = new System.Drawing.Point(17, 426);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(230, 30);
             this.radioButton5.TabIndex = 23;
@@ -832,7 +832,7 @@ namespace Рафиков_СРВ
             // radioButton6
             // 
             this.radioButton6.Enabled = false;
-            this.radioButton6.Location = new System.Drawing.Point(16, 395);
+            this.radioButton6.Location = new System.Drawing.Point(16, 462);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(217, 34);
             this.radioButton6.TabIndex = 22;
@@ -843,7 +843,7 @@ namespace Рафиков_СРВ
             // radioButton7
             // 
             this.radioButton7.Enabled = false;
-            this.radioButton7.Location = new System.Drawing.Point(16, 435);
+            this.radioButton7.Location = new System.Drawing.Point(16, 502);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(182, 41);
             this.radioButton7.TabIndex = 21;
@@ -854,7 +854,7 @@ namespace Рафиков_СРВ
             // radioButton8
             // 
             this.radioButton8.Enabled = false;
-            this.radioButton8.Location = new System.Drawing.Point(16, 476);
+            this.radioButton8.Location = new System.Drawing.Point(16, 543);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(252, 40);
             this.radioButton8.TabIndex = 20;
@@ -865,7 +865,7 @@ namespace Рафиков_СРВ
             // checkBox5
             // 
             this.checkBox5.Enabled = false;
-            this.checkBox5.Location = new System.Drawing.Point(291, 376);
+            this.checkBox5.Location = new System.Drawing.Point(291, 443);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(212, 50);
             this.checkBox5.TabIndex = 19;
@@ -886,7 +886,7 @@ namespace Рафиков_СРВ
             // checkBox4
             // 
             this.checkBox4.Enabled = false;
-            this.checkBox4.Location = new System.Drawing.Point(291, 339);
+            this.checkBox4.Location = new System.Drawing.Point(291, 406);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(196, 37);
             this.checkBox4.TabIndex = 18;
@@ -907,7 +907,7 @@ namespace Рафиков_СРВ
             // checkBox3
             // 
             this.checkBox3.Enabled = false;
-            this.checkBox3.Location = new System.Drawing.Point(291, 295);
+            this.checkBox3.Location = new System.Drawing.Point(291, 362);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(196, 45);
             this.checkBox3.TabIndex = 17;
@@ -918,7 +918,7 @@ namespace Рафиков_СРВ
             // checkBox2
             // 
             this.checkBox2.Enabled = false;
-            this.checkBox2.Location = new System.Drawing.Point(291, 258);
+            this.checkBox2.Location = new System.Drawing.Point(291, 325);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(196, 40);
             this.checkBox2.TabIndex = 16;
@@ -969,7 +969,7 @@ namespace Рафиков_СРВ
             // checkBox1
             // 
             this.checkBox1.Enabled = false;
-            this.checkBox1.Location = new System.Drawing.Point(291, 219);
+            this.checkBox1.Location = new System.Drawing.Point(291, 286);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(196, 41);
             this.checkBox1.TabIndex = 15;
@@ -980,7 +980,7 @@ namespace Рафиков_СРВ
             // 
             this.label18.AutoSize = true;
             this.label18.Enabled = false;
-            this.label18.Location = new System.Drawing.Point(17, 86);
+            this.label18.Location = new System.Drawing.Point(17, 74);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(162, 13);
             this.label18.TabIndex = 6;
@@ -990,7 +990,7 @@ namespace Рафиков_СРВ
             // 
             this.label22.AutoSize = true;
             this.label22.Enabled = false;
-            this.label22.Location = new System.Drawing.Point(305, 202);
+            this.label22.Location = new System.Drawing.Point(305, 269);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(182, 13);
             this.label22.TabIndex = 14;
@@ -999,10 +999,10 @@ namespace Рафиков_СРВ
             // algorithm_label2
             // 
             this.algorithm_label2.Enabled = false;
-            this.algorithm_label2.Location = new System.Drawing.Point(16, 102);
+            this.algorithm_label2.Location = new System.Drawing.Point(16, 90);
             this.algorithm_label2.Multiline = true;
             this.algorithm_label2.Name = "algorithm_label2";
-            this.algorithm_label2.Size = new System.Drawing.Size(523, 63);
+            this.algorithm_label2.Size = new System.Drawing.Size(523, 173);
             this.algorithm_label2.TabIndex = 7;
             this.algorithm_label2.TextChanged += new System.EventHandler(this.algorithm_label2_TextChanged);
             // 
@@ -1010,7 +1010,7 @@ namespace Рафиков_СРВ
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Enabled = false;
-            this.radioButton4.Location = new System.Drawing.Point(17, 336);
+            this.radioButton4.Location = new System.Drawing.Point(17, 403);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(159, 17);
             this.radioButton4.TabIndex = 13;
@@ -1022,7 +1022,7 @@ namespace Рафиков_СРВ
             // 
             this.label20.AutoSize = true;
             this.label20.Enabled = false;
-            this.label20.Location = new System.Drawing.Point(17, 202);
+            this.label20.Location = new System.Drawing.Point(17, 269);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(101, 13);
             this.label20.TabIndex = 8;
@@ -1031,7 +1031,7 @@ namespace Рафиков_СРВ
             // radioButton3
             // 
             this.radioButton3.Enabled = false;
-            this.radioButton3.Location = new System.Drawing.Point(17, 292);
+            this.radioButton3.Location = new System.Drawing.Point(17, 359);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(230, 40);
             this.radioButton3.TabIndex = 12;
@@ -1043,7 +1043,7 @@ namespace Рафиков_СРВ
             // 
             this.label21.AutoSize = true;
             this.label21.Enabled = false;
-            this.label21.Location = new System.Drawing.Point(13, 226);
+            this.label21.Location = new System.Drawing.Point(13, 293);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(185, 13);
             this.label21.TabIndex = 9;
@@ -1053,7 +1053,7 @@ namespace Рафиков_СРВ
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Enabled = false;
-            this.radioButton2.Location = new System.Drawing.Point(17, 271);
+            this.radioButton2.Location = new System.Drawing.Point(17, 338);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(165, 17);
             this.radioButton2.TabIndex = 11;
@@ -1065,7 +1065,7 @@ namespace Рафиков_СРВ
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Enabled = false;
-            this.radioButton1.Location = new System.Drawing.Point(17, 246);
+            this.radioButton1.Location = new System.Drawing.Point(17, 313);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(160, 17);
             this.radioButton1.TabIndex = 10;
@@ -1087,6 +1087,23 @@ namespace Рафиков_СРВ
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Мониторинг инцидента";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label56
+            // 
+            this.label56.Location = new System.Drawing.Point(30, 305);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(254, 33);
+            this.label56.TabIndex = 5;
+            this.label56.Text = "Ось Y -работающие СЗИ на момент времени  Ось Х - Время";
+            // 
+            // label55
+            // 
+            this.label55.Location = new System.Drawing.Point(13, 664);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(315, 33);
+            this.label55.TabIndex = 4;
+            this.label55.Text = "Ось Y - пропускная способность серверного оборудования Ось Х - Время";
+            this.label55.Click += new System.EventHandler(this.label55_Click);
             // 
             // label54
             // 
@@ -1110,30 +1127,30 @@ namespace Рафиков_СРВ
             // 
             // chart2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea3);
             this.chart2.Location = new System.Drawing.Point(16, 361);
             this.chart2.Name = "chart2";
-            series1.BorderWidth = 2;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Name = "Series1";
-            this.chart2.Series.Add(series1);
+            series3.BorderWidth = 2;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Name = "Series1";
+            this.chart2.Series.Add(series3);
             this.chart2.Size = new System.Drawing.Size(989, 300);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
             this.chart1.Location = new System.Drawing.Point(16, 39);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series2.BorderWidth = 2;
-            series2.ChartArea = "ChartArea1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series4.BorderWidth = 2;
+            series4.ChartArea = "ChartArea1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(989, 268);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -1178,6 +1195,7 @@ namespace Рафиков_СРВ
             // 
             this.expenses.Location = new System.Drawing.Point(343, 292);
             this.expenses.Name = "expenses";
+            this.expenses.ReadOnly = true;
             this.expenses.Size = new System.Drawing.Size(89, 20);
             this.expenses.TabIndex = 8;
             // 
@@ -1231,6 +1249,7 @@ namespace Рафиков_СРВ
             // 
             this.total4.Location = new System.Drawing.Point(24, 130);
             this.total4.Name = "total4";
+            this.total4.ReadOnly = true;
             this.total4.Size = new System.Drawing.Size(90, 20);
             this.total4.TabIndex = 17;
             // 
@@ -1238,6 +1257,7 @@ namespace Рафиков_СРВ
             // 
             this.total3.Location = new System.Drawing.Point(24, 95);
             this.total3.Name = "total3";
+            this.total3.ReadOnly = true;
             this.total3.Size = new System.Drawing.Size(90, 20);
             this.total3.TabIndex = 16;
             // 
@@ -1245,6 +1265,7 @@ namespace Рафиков_СРВ
             // 
             this.total2.Location = new System.Drawing.Point(24, 61);
             this.total2.Name = "total2";
+            this.total2.ReadOnly = true;
             this.total2.Size = new System.Drawing.Size(90, 20);
             this.total2.TabIndex = 15;
             // 
@@ -1252,6 +1273,7 @@ namespace Рафиков_СРВ
             // 
             this.total1.Location = new System.Drawing.Point(24, 27);
             this.total1.Name = "total1";
+            this.total1.ReadOnly = true;
             this.total1.Size = new System.Drawing.Size(90, 20);
             this.total1.TabIndex = 14;
             // 
@@ -1347,34 +1369,43 @@ namespace Рафиков_СРВ
             // cost4
             // 
             this.cost4.Location = new System.Drawing.Point(15, 130);
+            this.cost4.MaxLength = 15;
             this.cost4.Name = "cost4";
             this.cost4.Size = new System.Drawing.Size(90, 20);
             this.cost4.TabIndex = 5;
             this.cost4.Text = "1501,25";
+            this.cost4.TextChanged += new System.EventHandler(this.cost1_TextChanged);
             // 
             // cost3
             // 
             this.cost3.Location = new System.Drawing.Point(15, 95);
+            this.cost3.MaxLength = 15;
             this.cost3.Name = "cost3";
             this.cost3.Size = new System.Drawing.Size(90, 20);
             this.cost3.TabIndex = 4;
             this.cost3.Text = "7530,25";
+            this.cost3.TextChanged += new System.EventHandler(this.cost1_TextChanged);
             // 
             // cost2
             // 
             this.cost2.Location = new System.Drawing.Point(15, 61);
+            this.cost2.MaxLength = 15;
             this.cost2.Name = "cost2";
             this.cost2.Size = new System.Drawing.Size(90, 20);
             this.cost2.TabIndex = 3;
             this.cost2.Text = "3450,20";
+            this.cost2.TextChanged += new System.EventHandler(this.cost1_TextChanged);
             // 
             // cost1
             // 
             this.cost1.Location = new System.Drawing.Point(15, 27);
+            this.cost1.MaxLength = 15;
             this.cost1.Name = "cost1";
             this.cost1.Size = new System.Drawing.Size(90, 20);
             this.cost1.TabIndex = 2;
             this.cost1.Text = "2720,50";
+            this.cost1.TextChanged += new System.EventHandler(this.cost1_TextChanged);
+            this.cost1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // groupBox9
             // 
@@ -1396,10 +1427,12 @@ namespace Рафиков_СРВ
             // quantity_textBox4
             // 
             this.quantity_textBox4.Location = new System.Drawing.Point(146, 130);
+            this.quantity_textBox4.MaxLength = 3;
             this.quantity_textBox4.Name = "quantity_textBox4";
             this.quantity_textBox4.Size = new System.Drawing.Size(34, 20);
             this.quantity_textBox4.TabIndex = 7;
             this.quantity_textBox4.Text = "2";
+            this.quantity_textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label30
             // 
@@ -1412,10 +1445,12 @@ namespace Рафиков_СРВ
             // quantity_textBox3
             // 
             this.quantity_textBox3.Location = new System.Drawing.Point(146, 95);
+            this.quantity_textBox3.MaxLength = 3;
             this.quantity_textBox3.Name = "quantity_textBox3";
             this.quantity_textBox3.Size = new System.Drawing.Size(34, 20);
             this.quantity_textBox3.TabIndex = 5;
             this.quantity_textBox3.Text = "2";
+            this.quantity_textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label29
             // 
@@ -1428,10 +1463,12 @@ namespace Рафиков_СРВ
             // quantity_textBox2
             // 
             this.quantity_textBox2.Location = new System.Drawing.Point(146, 61);
+            this.quantity_textBox2.MaxLength = 3;
             this.quantity_textBox2.Name = "quantity_textBox2";
             this.quantity_textBox2.Size = new System.Drawing.Size(34, 20);
             this.quantity_textBox2.TabIndex = 3;
             this.quantity_textBox2.Text = "2";
+            this.quantity_textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label28
             // 
@@ -1445,10 +1482,12 @@ namespace Рафиков_СРВ
             // quantity_textBox1
             // 
             this.quantity_textBox1.Location = new System.Drawing.Point(146, 27);
+            this.quantity_textBox1.MaxLength = 3;
             this.quantity_textBox1.Name = "quantity_textBox1";
             this.quantity_textBox1.Size = new System.Drawing.Size(34, 20);
             this.quantity_textBox1.TabIndex = 1;
             this.quantity_textBox1.Text = "5";
+            this.quantity_textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label27
             // 
@@ -1928,23 +1967,6 @@ namespace Рафиков_СРВ
             this.timer5.Enabled = true;
             this.timer5.Interval = 300;
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
-            // 
-            // label55
-            // 
-            this.label55.Location = new System.Drawing.Point(13, 664);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(315, 33);
-            this.label55.TabIndex = 4;
-            this.label55.Text = "Ось Y - пропускная способность серверного оборудования Ось Х - Время";
-            this.label55.Click += new System.EventHandler(this.label55_Click);
-            // 
-            // label56
-            // 
-            this.label56.Location = new System.Drawing.Point(30, 305);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(254, 33);
-            this.label56.TabIndex = 5;
-            this.label56.Text = "Ось Y -работающие СЗИ на момент времени  Ось Х - Время";
             // 
             // Form1
             // 
