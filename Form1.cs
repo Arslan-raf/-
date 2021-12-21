@@ -53,14 +53,10 @@ namespace Рафиков_СРВ
         public Form1()
         {
             InitializeComponent();
-          
-            //timer1.Interval = 500;
             minute = 0;
             second = 0;
             minute3 = 0;
             second3 = 0;
-            //  second_label.Text = "00";
-            //minute_label.Text = "00";
             timer2.Enabled = true;
             timer3.Enabled = true;
             active = 11;
@@ -68,25 +64,6 @@ namespace Рафиков_СРВ
             int[] kek = new int[11];
             active_textBox.Text = "11";
             active_textBox2.Text = "0";
-            //для графика
-
-
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void algorithm_label2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void result_button_Click(object sender, EventArgs e)
@@ -99,9 +76,7 @@ namespace Рафиков_СРВ
             Start_button.Enabled = true;
             ez_game.Enabled = true;
 
-
-
-            ///////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////
             if ((radioButton1.Checked) || (radioButton2.Checked)|| (radioButton3.Checked)|| (radioButton4.Checked)) {
                 textBox1.Text = B1;
                 textBox2.Text = B12;
@@ -157,9 +132,7 @@ namespace Рафиков_СРВ
                 textBox2.Text = C15;
             }
 
-
-
-            //????????????????????????????????????????
+            /////////////////
              if (     ((radioButton8.Checked) || (radioButton9.Checked))  &&   ((checkBox8.Checked) && (checkBox9.Checked))      )
               {
                   textBox1.Text = C1;
@@ -232,7 +205,7 @@ namespace Рафиков_СРВ
                 textBox1.Text = E1;
                 textBox2.Text = E19;
             }
-            /////////????????????????????????????????????????????????????????????????????????
+            /////////
             if (checkBox10.Checked)
             {
                 textBox1.Text = F1;
@@ -306,30 +279,25 @@ namespace Рафиков_СРВ
             minute_label.Text = "00";
             second_label.Text = "00";
 
-
             timer1.Start();
             algorithm_label2.Text = "Уровень угрозы 1. Алгоритм реагирования на инциденты: \r\n";
-            algorithm_label2.Text += "1) Обнаружение инцидента \r\n";
-            algorithm_label2.Text += "2) Регистрация инцидента \r\n";
-            algorithm_label2.Text += "3) Предварительный анализ \r\n";
-            algorithm_label2.Text += "4) Классификация инцидента  \r\n";
-            algorithm_label2.Text += "5) Процесс сопоставления инцидента. Имеется ли в БД? \r\n";
-            algorithm_label2.Text += "6) Если да, то поиск возможного решения и закрытие инцидента \r\n";
-            algorithm_label2.Text += "7) Если в БД нет похожего инцидента то переходим на уровень угрозы 2 \r\n";
+            algorithm_label2.Text += "Обнаружение инцидента \r\n";
+            algorithm_label2.Text += "Регистрация инцидента \r\n";
+            algorithm_label2.Text += "Предварительный анализ \r\n";
+            algorithm_label2.Text += "Классификация инцидента  \r\n";
+            algorithm_label2.Text += "Процесс сопоставления инцидента. Имеется ли в БД? \r\n";
+            algorithm_label2.Text += "Если да, то поиск возможного решения и закрытие инцидента \r\n";
+            algorithm_label2.Text += "Если в БД нет похожего инцидента то переходим на уровень угрозы 2 \r\n";
             
 
             if (timer1.Enabled)
             {
-
                 go_button.Enabled = true;
                 stop_button.Enabled = true;
                 algorithm_label2.Enabled = true;
                 label18.Enabled = true;
             }
             Start_button.Enabled = false;
-            
-
-
         }
 
         private void stop_button_Click(object sender, EventArgs e)
@@ -374,10 +342,6 @@ namespace Рафиков_СРВ
         {
             date_time.Text = DateTime.Now.ToString();
         }
-
-
-
-
 
         private void go_button_Click(object sender, EventArgs e)
         {
@@ -549,7 +513,7 @@ namespace Рафиков_СРВ
             ez_game.Enabled = false;
             Start_button.Enabled = false;
 
-            this.tabControl1.SelectedTab = tabPage1 /*needed tab*/;
+            this.tabControl1.SelectedTab = tabPage1 ;
         }
 
         private void tabPage4_Click(object sender, EventArgs e)
@@ -614,23 +578,7 @@ namespace Рафиков_СРВ
 
         }
 
-        private void label55_Click(object sender, EventArgs e)
-        {
 
-        }
-        ///////////////////////////////
-
-        /*
-            private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-            {
-                if (Char.IsNumber(e.KeyChar) ||
-                    (!string.IsNullOrEmpty(textBox1.Text) && e.KeyChar == ','))
-                {
-                    return;
-                }
-
-                e.Handled = true;
-            }   */
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (     !(char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))    )
@@ -642,22 +590,10 @@ namespace Рафиков_СРВ
                 e.Handled = true;
         }
 
-        private void cost1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-
-
 
         //для ГРАФИКОВ 
         private void timer4_Tick(object sender, EventArgs e)
         {
-
-
             if (timer4.Enabled)
             {
                 if (second3 < 59)
@@ -683,15 +619,10 @@ namespace Рафиков_СРВ
                     minute3++;
                     second3 = 0;
                 }
-
-
             }
-
-
-
         }
 
-        // ТАЙМЕР ДЛЯ РЕШЕНИЯ ПРОБЛЕМА ( 2 ВКЛАДКА)
+        // ТАЙМЕР ДЛЯ РЕШЕНИЯ ПРОБЛЕМы (2 ВКЛАДКА)
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (timer1.Enabled)
@@ -724,23 +655,8 @@ namespace Рафиков_СРВ
 
 
                     }
-
-                   /* if (minute == 2)
-                    {
-
-                        algorithm_label2.Text = "Вы не успели решить пролему за 2 минуту. Угроза переходит на 3 уровень \n";
-                        algorithm_label2.Text += "1) попробуй  \n";
-                        algorithm_label2.Text += "2) давай  \n";
-                        algorithm_label2.Text += "3) ну же \n";
-
-
-                    }*/
-
-                }
-
-
+                 }
             }
-
         }
 
         private void chart1_Click(object sender, EventArgs e)
@@ -752,21 +668,16 @@ namespace Рафиков_СРВ
 
         private void go_over_button_Click(object sender, EventArgs e)
         {
-            this.tabControl1.SelectedTab = tabPage2 /*needed tab*/;
+            this.tabControl1.SelectedTab = tabPage2;
             Start_button.Enabled = true;
 
 
         }
 
 
-        
-
-        //ИЗМЕНЕНИЕ УЗЛОВ ( ТИПА СЛОМАЛИСЬ) 
+        //ИЗМЕНЕНИЕ УЗЛОВ 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            
-                
-
 
             if (timer2.Enabled)
             {
@@ -953,12 +864,6 @@ namespace Рафиков_СРВ
                         
                         
                         timer2.Enabled = false;
-
-
-
-
-
-
 
                     }
                 }

@@ -30,10 +30,10 @@ namespace Рафиков_СРВ
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.active_textBox2 = new System.Windows.Forms.TextBox();
@@ -156,7 +156,6 @@ namespace Рафиков_СРВ
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label52 = new System.Windows.Forms.Label();
             this.ready = new System.Windows.Forms.Button();
-            this.label51 = new System.Windows.Forms.Label();
             this.groupBox_firewall = new System.Windows.Forms.GroupBox();
             this.button_firewall2 = new System.Windows.Forms.Button();
             this.button_firewall1 = new System.Windows.Forms.Button();
@@ -525,7 +524,6 @@ namespace Рафиков_СРВ
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Копьютеры сотрудников";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pk_textBox5
             // 
@@ -913,7 +911,6 @@ namespace Рафиков_СРВ
             this.checkBox3.TabIndex = 17;
             this.checkBox3.Text = "Совершено группой лиц по предварительному сговору";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -1004,7 +1001,6 @@ namespace Рафиков_СРВ
             this.algorithm_label2.Name = "algorithm_label2";
             this.algorithm_label2.Size = new System.Drawing.Size(523, 173);
             this.algorithm_label2.TabIndex = 7;
-            this.algorithm_label2.TextChanged += new System.EventHandler(this.algorithm_label2_TextChanged);
             // 
             // radioButton4
             // 
@@ -1103,7 +1099,6 @@ namespace Рафиков_СРВ
             this.label55.Size = new System.Drawing.Size(315, 33);
             this.label55.TabIndex = 4;
             this.label55.Text = "Ось Y - пропускная способность серверного оборудования Ось Х - Время";
-            this.label55.Click += new System.EventHandler(this.label55_Click);
             // 
             // label54
             // 
@@ -1127,30 +1122,30 @@ namespace Рафиков_СРВ
             // 
             // chart2
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
+            chartArea11.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea11);
             this.chart2.Location = new System.Drawing.Point(16, 361);
             this.chart2.Name = "chart2";
-            series3.BorderWidth = 2;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Name = "Series1";
-            this.chart2.Series.Add(series3);
+            series11.BorderWidth = 2;
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Name = "Series1";
+            this.chart2.Series.Add(series11);
             this.chart2.Size = new System.Drawing.Size(989, 300);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
+            chartArea12.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea12);
             this.chart1.Location = new System.Drawing.Point(16, 39);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series4.BorderWidth = 2;
-            series4.ChartArea = "ChartArea1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series12.BorderWidth = 2;
+            series12.ChartArea = "ChartArea1";
+            series12.Name = "Series1";
+            this.chart1.Series.Add(series12);
             this.chart1.Size = new System.Drawing.Size(989, 268);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -1374,7 +1369,6 @@ namespace Рафиков_СРВ
             this.cost4.Size = new System.Drawing.Size(90, 20);
             this.cost4.TabIndex = 5;
             this.cost4.Text = "1501,25";
-            this.cost4.TextChanged += new System.EventHandler(this.cost1_TextChanged);
             // 
             // cost3
             // 
@@ -1384,7 +1378,6 @@ namespace Рафиков_СРВ
             this.cost3.Size = new System.Drawing.Size(90, 20);
             this.cost3.TabIndex = 4;
             this.cost3.Text = "7530,25";
-            this.cost3.TextChanged += new System.EventHandler(this.cost1_TextChanged);
             // 
             // cost2
             // 
@@ -1394,7 +1387,6 @@ namespace Рафиков_СРВ
             this.cost2.Size = new System.Drawing.Size(90, 20);
             this.cost2.TabIndex = 3;
             this.cost2.Text = "3450,20";
-            this.cost2.TextChanged += new System.EventHandler(this.cost1_TextChanged);
             // 
             // cost1
             // 
@@ -1404,7 +1396,6 @@ namespace Рафиков_СРВ
             this.cost1.Size = new System.Drawing.Size(90, 20);
             this.cost1.TabIndex = 2;
             this.cost1.Text = "2720,50";
-            this.cost1.TextChanged += new System.EventHandler(this.cost1_TextChanged);
             this.cost1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // groupBox9
@@ -1503,7 +1494,6 @@ namespace Рафиков_СРВ
             // 
             this.tabPage5.Controls.Add(this.label52);
             this.tabPage5.Controls.Add(this.ready);
-            this.tabPage5.Controls.Add(this.label51);
             this.tabPage5.Controls.Add(this.groupBox_firewall);
             this.tabPage5.Controls.Add(this.groupBox_network);
             this.tabPage5.Controls.Add(this.groupBox_server);
@@ -1537,16 +1527,6 @@ namespace Рафиков_СРВ
             this.ready.Text = "Готово";
             this.ready.UseVisualStyleBackColor = true;
             this.ready.Click += new System.EventHandler(this.ready_Click);
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(10, 40);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(578, 13);
-            this.label51.TabIndex = 9;
-            this.label51.Text = "ИЛИ ПРОСТО ТЕКСТОМ ВЫВЕСТИ ЧТО ИМЕННО СЛОМАЛОСЬ  И  ТЫКАТЬ КНОПКИ (КАЖДЫЕ ОТДЕЛЬН" +
-    "О)";
             // 
             // groupBox_firewall
             // 
@@ -2144,7 +2124,6 @@ namespace Рафиков_СРВ
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label51;
         private System.Windows.Forms.GroupBox groupBox_firewall;
         private System.Windows.Forms.TextBox textBox_firewall2;
         private System.Windows.Forms.Label label40;
